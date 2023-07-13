@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="row">
+    <!-- Blog entries-->
+    <div class="col-lg-8">
+        <!-- Nested row for non-featured blog posts-->
+        <div class="row">
+                <!-- Blog post-->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        
+                        <h2 class="card-title h4">Titulo 1</h2>
+                        <p class="card-text">Post</p>
+                    </div>
+                </div>
+                <!-- Blog post-->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        
+                        <h2 class="card-title h4">Titulo 2</h2>
+                        <p class="card-text">Post2s</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- Side widgets-->
+    <div class="col-lg-4">
+        <div class="card mb-4">
+            <div class="card-header">Categorias</div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="{% url 'blog:post' %}">Camisetas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
